@@ -5,13 +5,13 @@ import { applyMiddleware } from 'graphql-middleware';
 import permissions from './permissions';
 import { typeDefs as AuthTypes, resolvers as authResolvers } from './auth';
 
-const Query = gql`
+const Query = `
   type Query {
     _empty: String
   }
 `;
 
-const Mutation = gql`
+const Mutation = `
   type Mutation {
     _empty: String
   }

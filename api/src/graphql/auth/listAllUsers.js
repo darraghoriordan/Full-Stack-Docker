@@ -1,7 +1,7 @@
 import { gql } from 'apollo-server';
 import { getAllUsers } from './db/getAllUsers';
 
-export const typeDefs = gql`
+export const typeDefs = `
   type User {
     id: ID
     first_name: String
@@ -10,7 +10,7 @@ export const typeDefs = gql`
   }
 
   extend type Query {
-    listAllUsers: [User]
+    listAllUsers: [User]!
   }
 `;
 

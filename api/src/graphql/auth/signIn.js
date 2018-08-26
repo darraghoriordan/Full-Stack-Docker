@@ -1,7 +1,7 @@
 import { gql } from 'apollo-server';
 import { validateUser } from './db/validateUser';
 
-export const typeDefs = gql`
+export const typeDefs = `
   type SignInOutputType {
     id: ID
   }

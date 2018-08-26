@@ -7,7 +7,7 @@ const numCPUs = require('os').cpus().length;
 const startServer = () => {
   const server = new ApolloServer({ schema, context });
   server.listen({ port: 8000 }).then(({ url }) => {
-    console.log(`🚀  Server ready at ${url}`);
+    console.log(`🚀  Yo! Server ready at ${url}`);
   });
 };
 
