@@ -10,6 +10,9 @@ services:
       - NODE_PATH=/usr/src/frontend/src
       - REACT_APP_ENV=production
       - HTTPS=true
+    ports:
+      - 80:80
+      - 443:443
     env_file:
       - ./common.env
     depends_on:
